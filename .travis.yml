@@ -16,3 +16,8 @@ script:
 - mvn test
 
 - mvn evosuite:info
+
+- name: Upload coverage to Codecov  
+  uses: codecov/codecov-action@v1
+    with:
+      token: ${{155406b4-65ba-4ba5-bbbc-1db0791a3718}}
